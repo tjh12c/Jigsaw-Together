@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Puzzle Activity View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PuzzleActivityViewController" customModule="Jigsaw_Together" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bo5-gf-fDM" customClass="PuzzleView" customModule="Jigsaw_Together" customModuleProvider="target">
+                                <rect key="frame" x="20" y="83" width="560" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-OB-C2M" customClass="PuzzleTimer" customModule="Jigsaw_Together" customModuleProvider="target">
+                                <rect key="frame" x="20" y="38" width="560" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4eA-6H-p1I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bo5-gf-fDM" secondAttribute="bottom" constant="20" id="1gt-As-Hx9"/>
+                            <constraint firstAttribute="trailing" secondItem="Bo5-gf-fDM" secondAttribute="trailing" constant="20" id="5LW-rz-5H3"/>
+                            <constraint firstItem="lQj-OB-C2M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="6RM-o9-3AT"/>
+                            <constraint firstItem="Bo5-gf-fDM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="9ba-vf-eAT"/>
+                            <constraint firstItem="lQj-OB-C2M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="BFV-om-TY8"/>
+                            <constraint firstAttribute="trailing" secondItem="lQj-OB-C2M" secondAttribute="trailing" constant="20" id="rLm-cZ-COw"/>
+                            <constraint firstItem="Bo5-gf-fDM" firstAttribute="top" secondItem="lQj-OB-C2M" secondAttribute="bottom" constant="8" id="rXa-Zk-8gC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="puzzleCollectionView" destination="Bo5-gf-fDM" id="pvH-ES-JaP"/>
+                        <outlet property="puzzleTimer" destination="lQj-OB-C2M" id="V7D-co-vUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="471"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iQl-5x-yoQ">
+            <objects>
+                <viewController id="qfk-XP-OAN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRd-Vq-397"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Sz-JH-A3k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wm1-J7-XyC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-0i-xb4">
+                                <rect key="frame" x="74" y="168" width="292" height="96"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-ga-YPd">
+                                        <rect key="frame" x="191" y="225" width="219" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mpL-5s-6XJ">
+                                        <rect key="frame" x="191" y="174" width="219" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M7-Re-eUD">
+                                        <rect key="frame" x="191" y="123" width="219" height="43"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="upH-Lo-u7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="508"/>
+        </scene>
+    </scenes>
+</document>

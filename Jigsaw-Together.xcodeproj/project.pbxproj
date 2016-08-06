@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AAD80621CF802C96E61DD0B /* Pods_Jigsaw_Together.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EA219050300B1E0D4BFB47 /* Pods_Jigsaw_Together.framework */; };
+		611DAE331D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611DAE321D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib */; };
+		613019C31D2282D000A0FFEA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613019C21D2282D000A0FFEA /* Extensions.swift */; };
+		613019C51D22909800A0FFEA /* ChunkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613019C41D22909800A0FFEA /* ChunkManager.swift */; };
+		6148CEF31D4BD853007745CE /* JTFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148CEF21D4BD853007745CE /* JTFirebaseManager.swift */; };
+		616DDDE21D221F98008A2416 /* English.plist in Resources */ = {isa = PBXBuildFile; fileRef = 616DDDE11D221F98008A2416 /* English.plist */; };
+		616DDDE41D221FAF008A2416 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616DDDE31D221FAF008A2416 /* Test.swift */; };
+		616DDDE61D22229F008A2416 /* PuzzleTimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 616DDDE51D22229F008A2416 /* PuzzleTimer.xib */; };
+		616DDDE81D2222AF008A2416 /* PuzzleTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616DDDE71D2222AF008A2416 /* PuzzleTimer.swift */; };
+		618022011D1BA2600051ED48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022001D1BA2600051ED48 /* AppDelegate.swift */; };
+		618022031D1BA2600051ED48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022021D1BA2600051ED48 /* ViewController.swift */; };
+		618022061D1BA2600051ED48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618022041D1BA2600051ED48 /* Main.storyboard */; };
+		618022081D1BA2600051ED48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618022071D1BA2600051ED48 /* Assets.xcassets */; };
+		6180220B1D1BA2600051ED48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618022091D1BA2600051ED48 /* LaunchScreen.storyboard */; };
+		618022161D1BA2600051ED48 /* Jigsaw_TogetherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022151D1BA2600051ED48 /* Jigsaw_TogetherTests.swift */; };
+		618022211D1BA2600051ED48 /* Jigsaw_TogetherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022201D1BA2600051ED48 /* Jigsaw_TogetherUITests.swift */; };
+		6180224E1D1BDE870051ED48 /* PuzzleActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6180224D1D1BDE870051ED48 /* PuzzleActivityViewController.swift */; };
+		618022511D1BE2DC0051ED48 /* PuzzlePieceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022501D1BE2DC0051ED48 /* PuzzlePieceCollectionViewCell.swift */; };
+		618022531D1BE4120051ED48 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022521D1BE4120051ED48 /* PuzzleView.swift */; };
+		618022551D1BE4260051ED48 /* PuzzleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 618022541D1BE4260051ED48 /* PuzzleView.xib */; };
+		618022581D1C881E0051ED48 /* Chunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618022571D1C881E0051ED48 /* Chunk.swift */; };
+		61ADB7EB1D4FDC110041FB79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61ADB7EA1D4FDC110041FB79 /* GoogleService-Info.plist */; };
+		61ADB7EE1D4FE65C0041FB79 /* JTFirebaseGameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ADB7ED1D4FE65C0041FB79 /* JTFirebaseGameData.swift */; };
+		61ADB7F11D4FE6E00041FB79 /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ADB7F01D4FE6E00041FB79 /* AuthorizationController.swift */; };
+		61ADB7F41D4FF6C10041FB79 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ADB7F31D4FF6C10041FB79 /* AuthorizationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		618022121D1BA2600051ED48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618021F51D1BA25F0051ED48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618021FC1D1BA25F0051ED48;
+			remoteInfo = "Jigsaw-Together";
+		};
+		6180221D1D1BA2600051ED48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618021F51D1BA25F0051ED48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618021FC1D1BA25F0051ED48;
+			remoteInfo = "Jigsaw-Together";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09230ECEE86269F934240D32 /* Pods-Jigsaw-Together.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigsaw-Together.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jigsaw-Together/Pods-Jigsaw-Together.debug.xcconfig"; sourceTree = "<group>"; };
+		611DAE321D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PuzzlePieceCollectionViewCell.xib; path = "Puzzle Activity/PuzzlePieceCollectionViewCell.xib"; sourceTree = "<group>"; };
+		613019C21D2282D000A0FFEA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		613019C41D22909800A0FFEA /* ChunkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkManager.swift; sourceTree = "<group>"; };
+		6148CEF21D4BD853007745CE /* JTFirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTFirebaseManager.swift; sourceTree = "<group>"; };
+		616DDDE11D221F98008A2416 /* English.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = English.plist; sourceTree = "<group>"; };
+		616DDDE31D221FAF008A2416 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		616DDDE51D22229F008A2416 /* PuzzleTimer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuzzleTimer.xib; sourceTree = "<group>"; };
+		616DDDE71D2222AF008A2416 /* PuzzleTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleTimer.swift; sourceTree = "<group>"; };
+		618021FD1D1BA25F0051ED48 /* Jigsaw-Together.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jigsaw-Together.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618022001D1BA2600051ED48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		618022021D1BA2600051ED48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		618022051D1BA2600051ED48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		618022071D1BA2600051ED48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6180220A1D1BA2600051ED48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6180220C1D1BA2600051ED48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618022111D1BA2600051ED48 /* Jigsaw-TogetherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jigsaw-TogetherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618022151D1BA2600051ED48 /* Jigsaw_TogetherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jigsaw_TogetherTests.swift; sourceTree = "<group>"; };
+		618022171D1BA2600051ED48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6180221C1D1BA2600051ED48 /* Jigsaw-TogetherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jigsaw-TogetherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		618022201D1BA2600051ED48 /* Jigsaw_TogetherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jigsaw_TogetherUITests.swift; sourceTree = "<group>"; };
+		618022221D1BA2600051ED48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6180224D1D1BDE870051ED48 /* PuzzleActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleActivityViewController.swift; sourceTree = "<group>"; };
+		618022501D1BE2DC0051ED48 /* PuzzlePieceCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PuzzlePieceCollectionViewCell.swift; path = "Puzzle Activity/PuzzlePieceCollectionViewCell.swift"; sourceTree = "<group>"; };
+		618022521D1BE4120051ED48 /* PuzzleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		618022541D1BE4260051ED48 /* PuzzleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuzzleView.xib; sourceTree = "<group>"; };
+		618022571D1C881E0051ED48 /* Chunk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chunk.swift; sourceTree = "<group>"; };
+		61ADB7EA1D4FDC110041FB79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61ADB7ED1D4FE65C0041FB79 /* JTFirebaseGameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTFirebaseGameData.swift; sourceTree = "<group>"; };
+		61ADB7F01D4FE6E00041FB79 /* AuthorizationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorizationController.swift; path = Authorization/AuthorizationController.swift; sourceTree = "<group>"; };
+		61ADB7F31D4FF6C10041FB79 /* AuthorizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorizationManager.swift; path = Authorization/AuthorizationManager.swift; sourceTree = "<group>"; };
+		88EA219050300B1E0D4BFB47 /* Pods_Jigsaw_Together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jigsaw_Together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49F0D2CF349B211674A6025 /* Pods-Jigsaw-Together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigsaw-Together.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jigsaw-Together/Pods-Jigsaw-Together.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		618021FA1D1BA25F0051ED48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AAD80621CF802C96E61DD0B /* Pods_Jigsaw_Together.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6180220E1D1BA2600051ED48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618022191D1BA2600051ED48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BC5A5BF751C2AA00A84313A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88EA219050300B1E0D4BFB47 /* Pods_Jigsaw_Together.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		616DDDDB1D21F12F008A2416 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61ADB7F51D4FFC600041FB79 /* Login */,
+				616DDDEA1D2222B9008A2416 /* PuzzleView */,
+				616DDDE91D2222B2008A2416 /* PuzzleTimer */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		616DDDDC1D21F1A2008A2416 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61ADB7EF1D4FE6B10041FB79 /* Login */,
+				6180224F1D1BE2730051ED48 /* Puzzle Activity */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		616DDDE91D2222B2008A2416 /* PuzzleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				616DDDE51D22229F008A2416 /* PuzzleTimer.xib */,
+				616DDDE71D2222AF008A2416 /* PuzzleTimer.swift */,
+			);
+			name = PuzzleTimer;
+			sourceTree = "<group>";
+		};
+		616DDDEA1D2222B9008A2416 /* PuzzleView */ = {
+			isa = PBXGroup;
+			children = (
+				618022501D1BE2DC0051ED48 /* PuzzlePieceCollectionViewCell.swift */,
+				611DAE321D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib */,
+				618022521D1BE4120051ED48 /* PuzzleView.swift */,
+				618022541D1BE4260051ED48 /* PuzzleView.xib */,
+			);
+			name = PuzzleView;
+			sourceTree = "<group>";
+		};
+		618021F41D1BA25F0051ED48 = {
+			isa = PBXGroup;
+			children = (
+				618021FF1D1BA2600051ED48 /* Jigsaw-Together */,
+				618022141D1BA2600051ED48 /* Jigsaw-TogetherTests */,
+				6180221F1D1BA2600051ED48 /* Jigsaw-TogetherUITests */,
+				618021FE1D1BA25F0051ED48 /* Products */,
+				7056E2454EAADA6EC9AD9B2F /* Pods */,
+				3BC5A5BF751C2AA00A84313A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		618021FE1D1BA25F0051ED48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				618021FD1D1BA25F0051ED48 /* Jigsaw-Together.app */,
+				618022111D1BA2600051ED48 /* Jigsaw-TogetherTests.xctest */,
+				6180221C1D1BA2600051ED48 /* Jigsaw-TogetherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618021FF1D1BA2600051ED48 /* Jigsaw-Together */ = {
+			isa = PBXGroup;
+			children = (
+				616DDDDC1D21F1A2008A2416 /* Controller */,
+				616DDDDB1D21F12F008A2416 /* View */,
+				618022561D1C87D50051ED48 /* Model */,
+				618022001D1BA2600051ED48 /* AppDelegate.swift */,
+				618022021D1BA2600051ED48 /* ViewController.swift */,
+				618022041D1BA2600051ED48 /* Main.storyboard */,
+				618022071D1BA2600051ED48 /* Assets.xcassets */,
+				618022091D1BA2600051ED48 /* LaunchScreen.storyboard */,
+				6180220C1D1BA2600051ED48 /* Info.plist */,
+				61ADB7EA1D4FDC110041FB79 /* GoogleService-Info.plist */,
+				616DDDE11D221F98008A2416 /* English.plist */,
+				616DDDE31D221FAF008A2416 /* Test.swift */,
+				613019C21D2282D000A0FFEA /* Extensions.swift */,
+			);
+			path = "Jigsaw-Together";
+			sourceTree = "<group>";
+		};
+		618022141D1BA2600051ED48 /* Jigsaw-TogetherTests */ = {
+			isa = PBXGroup;
+			children = (
+				618022151D1BA2600051ED48 /* Jigsaw_TogetherTests.swift */,
+				618022171D1BA2600051ED48 /* Info.plist */,
+			);
+			path = "Jigsaw-TogetherTests";
+			sourceTree = "<group>";
+		};
+		6180221F1D1BA2600051ED48 /* Jigsaw-TogetherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				618022201D1BA2600051ED48 /* Jigsaw_TogetherUITests.swift */,
+				618022221D1BA2600051ED48 /* Info.plist */,
+			);
+			path = "Jigsaw-TogetherUITests";
+			sourceTree = "<group>";
+		};
+		6180224F1D1BE2730051ED48 /* Puzzle Activity */ = {
+			isa = PBXGroup;
+			children = (
+				6180224D1D1BDE870051ED48 /* PuzzleActivityViewController.swift */,
+			);
+			name = "Puzzle Activity";
+			sourceTree = "<group>";
+		};
+		618022561D1C87D50051ED48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61ADB7F21D4FF5F90041FB79 /* Logic */,
+				618022571D1C881E0051ED48 /* Chunk.swift */,
+				613019C41D22909800A0FFEA /* ChunkManager.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		61ADB7EC1D4FE5560041FB79 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6148CEF21D4BD853007745CE /* JTFirebaseManager.swift */,
+				61ADB7ED1D4FE65C0041FB79 /* JTFirebaseGameData.swift */,
+			);
+			name = "Data Manager";
+			sourceTree = "<group>";
+		};
+		61ADB7EF1D4FE6B10041FB79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				61ADB7F01D4FE6E00041FB79 /* AuthorizationController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		61ADB7F21D4FF5F90041FB79 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				61ADB7EC1D4FE5560041FB79 /* Data Manager */,
+				61ADB7F31D4FF6C10041FB79 /* AuthorizationManager.swift */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		61ADB7F51D4FFC600041FB79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		7056E2454EAADA6EC9AD9B2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09230ECEE86269F934240D32 /* Pods-Jigsaw-Together.debug.xcconfig */,
+				E49F0D2CF349B211674A6025 /* Pods-Jigsaw-Together.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		618021FC1D1BA25F0051ED48 /* Jigsaw-Together */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618022251D1BA2600051ED48 /* Build configuration list for PBXNativeTarget "Jigsaw-Together" */;
+			buildPhases = (
+				B1820D5D7ED27F4E51AEF130 /* [CP] Check Pods Manifest.lock */,
+				618021F91D1BA25F0051ED48 /* Sources */,
+				618021FA1D1BA25F0051ED48 /* Frameworks */,
+				618021FB1D1BA25F0051ED48 /* Resources */,
+				498F1C2B6C7DF21C1F4E241F /* [CP] Embed Pods Frameworks */,
+				88D427E1CC7643DFFA91B5DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jigsaw-Together";
+			productName = "Jigsaw-Together";
+			productReference = 618021FD1D1BA25F0051ED48 /* Jigsaw-Together.app */;
+			productType = "com.apple.product-type.application";
+		};
+		618022101D1BA2600051ED48 /* Jigsaw-TogetherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618022281D1BA2600051ED48 /* Build configuration list for PBXNativeTarget "Jigsaw-TogetherTests" */;
+			buildPhases = (
+				6180220D1D1BA2600051ED48 /* Sources */,
+				6180220E1D1BA2600051ED48 /* Frameworks */,
+				6180220F1D1BA2600051ED48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				618022131D1BA2600051ED48 /* PBXTargetDependency */,
+			);
+			name = "Jigsaw-TogetherTests";
+			productName = "Jigsaw-TogetherTests";
+			productReference = 618022111D1BA2600051ED48 /* Jigsaw-TogetherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6180221B1D1BA2600051ED48 /* Jigsaw-TogetherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6180222B1D1BA2600051ED48 /* Build configuration list for PBXNativeTarget "Jigsaw-TogetherUITests" */;
+			buildPhases = (
+				618022181D1BA2600051ED48 /* Sources */,
+				618022191D1BA2600051ED48 /* Frameworks */,
+				6180221A1D1BA2600051ED48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6180221E1D1BA2600051ED48 /* PBXTargetDependency */,
+			);
+			name = "Jigsaw-TogetherUITests";
+			productName = "Jigsaw-TogetherUITests";
+			productReference = 6180221C1D1BA2600051ED48 /* Jigsaw-TogetherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		618021F51D1BA25F0051ED48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "ThinkBig Applications";
+				TargetAttributes = {
+					618021FC1D1BA25F0051ED48 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					618022101D1BA2600051ED48 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 618021FC1D1BA25F0051ED48;
+					};
+					6180221B1D1BA2600051ED48 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 618021FC1D1BA25F0051ED48;
+					};
+				};
+			};
+			buildConfigurationList = 618021F81D1BA25F0051ED48 /* Build configuration list for PBXProject "Jigsaw-Together" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 618021F41D1BA25F0051ED48;
+			productRefGroup = 618021FE1D1BA25F0051ED48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				618021FC1D1BA25F0051ED48 /* Jigsaw-Together */,
+				618022101D1BA2600051ED48 /* Jigsaw-TogetherTests */,
+				6180221B1D1BA2600051ED48 /* Jigsaw-TogetherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		618021FB1D1BA25F0051ED48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618022551D1BE4260051ED48 /* PuzzleView.xib in Resources */,
+				611DAE331D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib in Resources */,
+				6180220B1D1BA2600051ED48 /* LaunchScreen.storyboard in Resources */,
+				616DDDE21D221F98008A2416 /* English.plist in Resources */,
+				616DDDE61D22229F008A2416 /* PuzzleTimer.xib in Resources */,
+				618022081D1BA2600051ED48 /* Assets.xcassets in Resources */,
+				618022061D1BA2600051ED48 /* Main.storyboard in Resources */,
+				61ADB7EB1D4FDC110041FB79 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6180220F1D1BA2600051ED48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6180221A1D1BA2600051ED48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		498F1C2B6C7DF21C1F4E241F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jigsaw-Together/Pods-Jigsaw-Together-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88D427E1CC7643DFFA91B5DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jigsaw-Together/Pods-Jigsaw-Together-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1820D5D7ED27F4E51AEF130 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		618021F91D1BA25F0051ED48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618022581D1C881E0051ED48 /* Chunk.swift in Sources */,
+				613019C31D2282D000A0FFEA /* Extensions.swift in Sources */,
+				61ADB7F11D4FE6E00041FB79 /* AuthorizationController.swift in Sources */,
+				61ADB7EE1D4FE65C0041FB79 /* JTFirebaseGameData.swift in Sources */,
+				6180224E1D1BDE870051ED48 /* PuzzleActivityViewController.swift in Sources */,
+				618022511D1BE2DC0051ED48 /* PuzzlePieceCollectionViewCell.swift in Sources */,
+				616DDDE41D221FAF008A2416 /* Test.swift in Sources */,
+				618022031D1BA2600051ED48 /* ViewController.swift in Sources */,
+				6148CEF31D4BD853007745CE /* JTFirebaseManager.swift in Sources */,
+				61ADB7F41D4FF6C10041FB79 /* AuthorizationManager.swift in Sources */,
+				618022011D1BA2600051ED48 /* AppDelegate.swift in Sources */,
+				618022531D1BE4120051ED48 /* PuzzleView.swift in Sources */,
+				616DDDE81D2222AF008A2416 /* PuzzleTimer.swift in Sources */,
+				613019C51D22909800A0FFEA /* ChunkManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6180220D1D1BA2600051ED48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618022161D1BA2600051ED48 /* Jigsaw_TogetherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618022181D1BA2600051ED48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618022211D1BA2600051ED48 /* Jigsaw_TogetherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		618022131D1BA2600051ED48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618021FC1D1BA25F0051ED48 /* Jigsaw-Together */;
+			targetProxy = 618022121D1BA2600051ED48 /* PBXContainerItemProxy */;
+		};
+		6180221E1D1BA2600051ED48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618021FC1D1BA25F0051ED48 /* Jigsaw-Together */;
+			targetProxy = 6180221D1D1BA2600051ED48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		618022041D1BA2600051ED48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				618022051D1BA2600051ED48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		618022091D1BA2600051ED48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6180220A1D1BA2600051ED48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		618022231D1BA2600051ED48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		618022241D1BA2600051ED48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		618022261D1BA2600051ED48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09230ECEE86269F934240D32 /* Pods-Jigsaw-Together.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Jigsaw-Together/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thinkBig.Jigsaw-Together";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		618022271D1BA2600051ED48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E49F0D2CF349B211674A6025 /* Pods-Jigsaw-Together.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Jigsaw-Together/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thinkBig.Jigsaw-Together";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		618022291D1BA2600051ED48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jigsaw-TogetherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thinkBig.Jigsaw-TogetherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jigsaw-Together.app/Jigsaw-Together";
+			};
+			name = Debug;
+		};
+		6180222A1D1BA2600051ED48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jigsaw-TogetherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thinkBig.Jigsaw-TogetherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jigsaw-Together.app/Jigsaw-Together";
+			};
+			name = Release;
+		};
+		6180222C1D1BA2600051ED48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jigsaw-TogetherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thinkBig.Jigsaw-TogetherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jigsaw-Together";
+			};
+			name = Debug;
+		};
+		6180222D1D1BA2600051ED48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jigsaw-TogetherUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "thinkBig.Jigsaw-TogetherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jigsaw-Together";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		618021F81D1BA25F0051ED48 /* Build configuration list for PBXProject "Jigsaw-Together" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618022231D1BA2600051ED48 /* Debug */,
+				618022241D1BA2600051ED48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618022251D1BA2600051ED48 /* Build configuration list for PBXNativeTarget "Jigsaw-Together" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618022261D1BA2600051ED48 /* Debug */,
+				618022271D1BA2600051ED48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618022281D1BA2600051ED48 /* Build configuration list for PBXNativeTarget "Jigsaw-TogetherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618022291D1BA2600051ED48 /* Debug */,
+				6180222A1D1BA2600051ED48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6180222B1D1BA2600051ED48 /* Build configuration list for PBXNativeTarget "Jigsaw-TogetherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6180222C1D1BA2600051ED48 /* Debug */,
+				6180222D1D1BA2600051ED48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 618021F51D1BA25F0051ED48 /* Project object */;
+}
