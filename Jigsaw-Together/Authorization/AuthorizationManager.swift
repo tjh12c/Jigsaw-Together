@@ -14,13 +14,27 @@ import Firebase
  Provides interface for functions pertaining to authorization to Firebase account and server
  */
 class AuthorizationManager {
-    var error : NSError?
+    var createUserError : NSError?
+    var signInError : NSError?
     
+    ///Listener for the authorization state. Used to unregister the listener in deinit
+    var authListener : FIRAuthStateDidChangeListenerHandle!
     
+    ///Initialization. Set up a listener for auth state.
     init() {
+        self.authListener = FIRAuth.auth()?.addAuthStateDidChangeListener { auth, user in
+            if let user = user {
+                print("AuthorizationManager init: username is \(user.displayName)")
+            } else {
+                print("AuthorizationManager init: no user authenticated")
+            }
+        }
     }
     
-    
+    ///Deinitialization. Remove the listener to prevent memory leaks.
+    deinit {
+        FIRAuth.auth()?.removeAuthStateDidChangeListener(self.authListener)
+    }
     
     
     /**
@@ -30,28 +44,31 @@ class AuthorizationManager {
         - withPassword : The password to use
         - withUsername: The username to use
  
-     - Throws:
-        - InvalidEmailError : The email is not correctly structured
-        - UsernameTakenError: The username is already taken
-        - DatabaseConnectionError: Problem connecting to database
-        - UnknownError: Other error
+     - Note: Any errors will be placed in the object's "createUserError" variable. An observer is recommended
      */
     func createUser(withEmail email: String, withPassword password : String, withUsername username : String) {
         FIRAuth.auth()?.createUserWithEmail(email, password: password) { (user, error) in
             if let error = error {
-                self.error = error
-                return
+                print("AuthorizationManager error: createUser has error \(error.localizedDescription)")
+                self.createUserError = error
             }
             else {
-                
+                print("No Error")
             }
         }
     }
     
+    func signOut() {
+        try! FIRAuth.auth()!.signOut()
+    }
     
-    
-    
-    
+    func signIn(withEmail email: String, withPassword password : String) {
+        FIRAuth.auth()?.signInWithEmail(email, password: password) { (user, error) in
+            if let error = error {
+                self.signInError = error
+            }
+        }
+    }
     
     
     
