@@ -7,4 +7,5 @@ target 'Jigsaw-Together' do
     pod 'Kingfisher', '~> 2.4'
     pod 'Firebase'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
 end

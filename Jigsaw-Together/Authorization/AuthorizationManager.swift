@@ -18,7 +18,10 @@ class AuthorizationManager {
     var signInError : NSError?
     
     ///Listener for the authorization state. Used to unregister the listener in deinit
-    var authListener : FIRAuthStateDidChangeListenerHandle!
+    private var authListener : FIRAuthStateDidChangeListenerHandle!
+    
+    ///Reference to the Firebase realtime database
+    private var ref : FIRDatabaseReference!
     
     ///Initialization. Set up a listener for auth state.
     init() {
@@ -29,6 +32,10 @@ class AuthorizationManager {
                 print("AuthorizationManager init: no user authenticated")
             }
         }
+        
+        ///Set up reference to database
+        self.ref = FIRDatabase.database().reference()
+
     }
     
     ///Deinitialization. Remove the listener to prevent memory leaks.
@@ -54,19 +61,46 @@ class AuthorizationManager {
             }
             else {
                 print("No Error")
+                FIRAuth.auth()?.signInWithEmail(email, password: password) { (user, error) in
+                    if let error = error {
+                        self.signInError = error
+                    }
+                    else {
+                        self.saveUserToDatabase(username)
+                    }
+                }
             }
         }
     }
     
+    
+    /**
+     Signs out the currently signed in user in Firebase, if there is one
+     */
     func signOut() {
         try! FIRAuth.auth()!.signOut()
     }
     
+    
+    /**
+     Signs in a user using Firebase Auth
+     - Parameters:
+        - withEmail: Email address of user
+        - withPassword: Password for user
+     */
     func signIn(withEmail email: String, withPassword password : String) {
         FIRAuth.auth()?.signInWithEmail(email, password: password) { (user, error) in
             if let error = error {
                 self.signInError = error
             }
+        }
+    }
+    
+    //Private Class Methods
+    
+    private func saveUserToDatabase(username : String) {
+        if let user = FIRAuth.auth()?.currentUser {
+            self.ref.child("users").child(user.uid).setValue(["username": username])
         }
     }
     

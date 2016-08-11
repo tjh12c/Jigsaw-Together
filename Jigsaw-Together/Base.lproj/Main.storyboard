@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qfk-XP-OAN">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Puzzle Activity View Controller-->
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="20" y="83" width="560" height="497"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-OB-C2M" customClass="PuzzleTimer" customModule="Jigsaw_Together" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQj-OB-C2M" customClass="PuzzleTimer" customModule="Jigsaw_Together" customModuleProvider="target">
                                 <rect key="frame" x="20" y="38" width="560" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -49,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="-679" y="471"/>
         </scene>
-        <!--View Controller-->
+        <!--Authorization Controller-->
         <scene sceneID="iQl-5x-yoQ">
             <objects>
-                <viewController id="qfk-XP-OAN" sceneMemberID="viewController">
+                <viewController id="qfk-XP-OAN" customClass="AuthorizationController" customModule="Jigsaw_Together" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zRd-Vq-397"/>
                         <viewControllerLayoutGuide type="bottom" id="5Sz-JH-A3k"/>
@@ -61,28 +62,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gmB-0i-xb4">
-                                <rect key="frame" x="74" y="168" width="292" height="96"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pgi-Oe-zih">
+                                <rect key="frame" x="20" y="28" width="560" height="90"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8C-ga-YPd">
-                                        <rect key="frame" x="191" y="225" width="219" height="43"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DCp-2g-d6d">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mpL-5s-6XJ">
-                                        <rect key="frame" x="191" y="174" width="219" height="43"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MJx-rV-Zgv">
+                                        <rect key="frame" x="0.0" y="30" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2M7-Re-eUD">
-                                        <rect key="frame" x="191" y="123" width="219" height="43"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evP-ZR-cJF">
+                                        <rect key="frame" x="0.0" y="60" width="560" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj2-vh-iBR">
+                                <rect key="frame" x="189" y="126" width="222" height="30"/>
+                                <color key="backgroundColor" red="0.97163469957381865" green="1" blue="0.9779978369229041" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didPressButton:" destination="qfk-XP-OAN" eventType="touchUpInside" id="Ly6-UF-kE2"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="kj2-vh-iBR" firstAttribute="top" secondItem="pgi-Oe-zih" secondAttribute="bottom" constant="8" id="5EL-Pm-K9f"/>
+                            <constraint firstItem="pgi-Oe-zih" firstAttribute="top" secondItem="zRd-Vq-397" secondAttribute="bottom" constant="8" id="VBP-to-UZY"/>
+                            <constraint firstItem="kj2-vh-iBR" firstAttribute="width" secondItem="Wm1-J7-XyC" secondAttribute="height" multiplier="37:100" id="gbs-1a-0VO"/>
+                            <constraint firstAttribute="trailing" secondItem="pgi-Oe-zih" secondAttribute="trailing" constant="20" id="ghJ-D8-Igj"/>
+                            <constraint firstItem="5Sz-JH-A3k" firstAttribute="top" relation="greaterThanOrEqual" secondItem="kj2-vh-iBR" secondAttribute="bottom" constant="8" id="j0G-W7-32o"/>
+                            <constraint firstItem="pgi-Oe-zih" firstAttribute="leading" secondItem="Wm1-J7-XyC" secondAttribute="leading" constant="20" id="rYb-jZ-qxv"/>
+                            <constraint firstItem="kj2-vh-iBR" firstAttribute="centerX" secondItem="Wm1-J7-XyC" secondAttribute="centerX" id="sno-wh-i3P"/>
+                            <constraint firstItem="pgi-Oe-zih" firstAttribute="centerX" secondItem="Wm1-J7-XyC" secondAttribute="centerX" id="x2S-U2-T7J"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="DCp-2g-d6d" id="hG1-0S-HlZ"/>
+                        <outlet property="passwordField" destination="evP-ZR-cJF" id="1yB-rE-gpY"/>
+                        <outlet property="usernameField" destination="MJx-rV-Zgv" id="3Zg-mU-ihO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upH-Lo-u7P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
