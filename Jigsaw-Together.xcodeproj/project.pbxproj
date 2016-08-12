@@ -11,7 +11,7 @@
 		611DAE331D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 611DAE321D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib */; };
 		613019C31D2282D000A0FFEA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613019C21D2282D000A0FFEA /* Extensions.swift */; };
 		613019C51D22909800A0FFEA /* ChunkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613019C41D22909800A0FFEA /* ChunkManager.swift */; };
-		6148CEF31D4BD853007745CE /* JTFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148CEF21D4BD853007745CE /* JTFirebaseManager.swift */; };
+		6148CEF31D4BD853007745CE /* JTFirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148CEF21D4BD853007745CE /* JTFirebaseAuthManager.swift */; };
 		616DDDE21D221F98008A2416 /* English.plist in Resources */ = {isa = PBXBuildFile; fileRef = 616DDDE11D221F98008A2416 /* English.plist */; };
 		616DDDE41D221FAF008A2416 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616DDDE31D221FAF008A2416 /* Test.swift */; };
 		616DDDE61D22229F008A2416 /* PuzzleTimer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 616DDDE51D22229F008A2416 /* PuzzleTimer.xib */; };
@@ -32,7 +32,6 @@
 		6194DB461D5D3D66001C47C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6194DB451D5D3D66001C47C4 /* User.swift */; };
 		61ADB7EB1D4FDC110041FB79 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61ADB7EA1D4FDC110041FB79 /* GoogleService-Info.plist */; };
 		61ADB7EE1D4FE65C0041FB79 /* JTFirebaseGameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ADB7ED1D4FE65C0041FB79 /* JTFirebaseGameData.swift */; };
-		61ADB7F41D4FF6C10041FB79 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ADB7F31D4FF6C10041FB79 /* AuthorizationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +56,7 @@
 		611DAE321D4BA9E1001EEDE7 /* PuzzlePieceCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PuzzlePieceCollectionViewCell.xib; path = "Puzzle Activity/PuzzlePieceCollectionViewCell.xib"; sourceTree = "<group>"; };
 		613019C21D2282D000A0FFEA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		613019C41D22909800A0FFEA /* ChunkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChunkManager.swift; sourceTree = "<group>"; };
-		6148CEF21D4BD853007745CE /* JTFirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTFirebaseManager.swift; sourceTree = "<group>"; };
+		6148CEF21D4BD853007745CE /* JTFirebaseAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTFirebaseAuthManager.swift; sourceTree = "<group>"; };
 		616DDDE11D221F98008A2416 /* English.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = English.plist; sourceTree = "<group>"; };
 		616DDDE31D221FAF008A2416 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		616DDDE51D22229F008A2416 /* PuzzleTimer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PuzzleTimer.xib; sourceTree = "<group>"; };
@@ -84,7 +83,6 @@
 		6194DB451D5D3D66001C47C4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61ADB7EA1D4FDC110041FB79 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		61ADB7ED1D4FE65C0041FB79 /* JTFirebaseGameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JTFirebaseGameData.swift; sourceTree = "<group>"; };
-		61ADB7F31D4FF6C10041FB79 /* AuthorizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthorizationManager.swift; path = Authorization/AuthorizationManager.swift; sourceTree = "<group>"; };
 		88EA219050300B1E0D4BFB47 /* Pods_Jigsaw_Together.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jigsaw_Together.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49F0D2CF349B211674A6025 /* Pods-Jigsaw-Together.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jigsaw-Together.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jigsaw-Together/Pods-Jigsaw-Together.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -252,7 +250,7 @@
 		61ADB7EC1D4FE5560041FB79 /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
-				6148CEF21D4BD853007745CE /* JTFirebaseManager.swift */,
+				6148CEF21D4BD853007745CE /* JTFirebaseAuthManager.swift */,
 				61ADB7ED1D4FE65C0041FB79 /* JTFirebaseGameData.swift */,
 			);
 			name = "Data Manager";
@@ -270,7 +268,6 @@
 			isa = PBXGroup;
 			children = (
 				61ADB7EC1D4FE5560041FB79 /* Data Manager */,
-				61ADB7F31D4FF6C10041FB79 /* AuthorizationManager.swift */,
 			);
 			name = Logic;
 			sourceTree = "<group>";
@@ -487,8 +484,7 @@
 				618022031D1BA2600051ED48 /* ViewController.swift in Sources */,
 				6194DB431D5D33A2001C47C4 /* AuthorizationController.swift in Sources */,
 				6194DB461D5D3D66001C47C4 /* User.swift in Sources */,
-				6148CEF31D4BD853007745CE /* JTFirebaseManager.swift in Sources */,
-				61ADB7F41D4FF6C10041FB79 /* AuthorizationManager.swift in Sources */,
+				6148CEF31D4BD853007745CE /* JTFirebaseAuthManager.swift in Sources */,
 				618022011D1BA2600051ED48 /* AppDelegate.swift in Sources */,
 				618022531D1BE4120051ED48 /* PuzzleView.swift in Sources */,
 				616DDDE81D2222AF008A2416 /* PuzzleTimer.swift in Sources */,

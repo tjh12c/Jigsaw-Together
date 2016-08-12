@@ -22,7 +22,9 @@ class AuthorizationController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.emailField.text = "lolthisisatest@test.com"
+        self.usernameField.text = "testtest"
+        self.passwordField.text = "teeeeeeeeest"
         // Do any additional setup after loading the view.
     }
 
@@ -46,8 +48,8 @@ class AuthorizationController: UIViewController {
         let password = self.passwordField.text!
         let username = self.usernameField.text!
         
-        let auth = AuthorizationManager()
-        
+        let auth = JTFirebaseAuthManager()
+        auth.signOut()
         auth.createUser(withEmail: email, withPassword: password, withUsername: username)
         
     }
